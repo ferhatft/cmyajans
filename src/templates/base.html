@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <title> CMY Ajans </title>
+  <meta name="description" content="CMY Ajans  cmyajans web tasarım reklam">
+  <meta name="keywords" content="CMY Ajans  cmyajansı reklam pano web sitesi cmyajans ">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  <base href="" />
+  
+  <!--
+  --------------------------------------------------------------
+  Bu site Oref Tasarım tarafından geliştirilmiştir üçüncü kişilerle paylaşılamaz.
+
+  ferhattugrul.com  oref.tasarim@gmail.com
+  --------------------------------------------------------------    
+  -->
+
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'public/plugin/owl-carousel/owl.carousel.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'public/plugin/owl-carousel/owl.transitions.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'public/plugin/owl-carousel/owl.theme.css'%}">
+  <link rel="stylesheet" href="{% static 'public/css/ionicons.min.css'%}">
+  <link rel="stylesheet" href="{% static 'public/css/font-awesome.min.css'%}">
+  <link rel="icon" type="image/x-icon" href="{% static 'public/img/fav2.png'%}" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link href="{% static 'fonts.googleapis.com/css_2.css ' %}" rel="stylesheet">
+  <!--Start of Zendesk Chat Script-->
+  <link href="{% static 'fonts.googleapis.com/css.css' %}" rel="stylesheet">
+  <link href="{% static 'fonts.googleapis.com/css_3.css' %}" rel="stylesheet">
+  <link href="{% static 'fonts.googleapis.com/css_4.css' %}" rel="stylesheet">
+  <link href="{% static 'public/assets/css/lib.css' %}" rel="stylesheet">
+  <!-- Custom - Common CSS -->
+  <link href="{% static 'public/assets/css/plugins.css' %}" rel="stylesheet">
+  <link href="{% static 'public/assets/css/elementss.css' %}" rel="stylesheet">
+  <link href="{% static 'public/assets/css/imagehover.min.css' %}" rel="stylesheet">
+  <link href="{% static 'public/assets/css/rtl.css" rel="stylesheet' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'public/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/mycss.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'public/plugin/fancybox/source/jquery.fancybox.css' %}" />
+  <!--Bigdrop-->
+
+  <!-- my css -->
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ownavigation">
+  <header class="header_s">
+    <div class="mobilheader" style="padding:0;">
+      <div class="container-fluid" style="padding:0;">
+        <div class="col-md-12 mobal hidden-xs" style="text-align: left;line-height: 26px;padding-left: 50px;">
+          <nav class="navbar navbar-default masakapa"
+            style="position: relative;border:none;z-index: 9999999999;width: 100%;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false"
+                  style="background: transparent;border: none;">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"
+                style="    border: none;margin-top: 30px;">
+                <ul class="nav navbar-nav navbar-right ">
+                  <li class="                   "><a class="" href="{% url 'iletisim:iletisim' %}" >İletişim</a>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </div><!-- /.container-fluid -->
+        <div class="col-md-4" style="text-align:left;">
+          <a class="" href="{% url 'homepage' %}" ><img style="height: 24px;" src="{% static 'public/img/cmyajanslogo.png' %}"
+              class="moblogo" style="    height: 64px;top: 23px;left: 55px;position: absolute;"><img
+              style="display: unset;padding-left:35px;height: 8rem;  margin-top: 26px;"
+              src="{% static 'public/img/cmyajanslogo.png' %}" alt="Oref" class="img-responsive logos" /></a>
+        </div>
+        <div class="col-md-4 hidden-xs" style="text-align: center; margin-top: 33px;  color: white;">
+        </div>
+        <span style=" margin-top: 26px;font-size: 30px;float: right;cursor: pointer;margin-right: 20px;"
+          onclick="openNav()"><img class="hidden-xs" style="height: 24px;" src="{% static 'public/img/menu.png' %}"
+            id="bars"> <img class="gizleyici" src="{% static 'public/img/siyah.png' %}" id="bars"> </span>
+      </div>
+      <div id="myNav" class="overlay">
+        <img src="{% static 'public/img/cmyajanslogo.png' %}" style="height: 80px; margin: 30px;" class="mobhei"
+          style="top: 23px;left: 55px;position: absolute;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <ul class="menu">
+            <li> <a style="text-decoration: none;" href="{% url 'iletisim:iletisim' %}" >İletişim</a> </li>
+            <li class="bg"></li>
+        </div>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+      </script>
+  </header>
+  </div>
+  </div>
+  
+  {% block body %}
+
+
+  {% endblock body %}
+
+
+
+  <script src="{% static 'public/assets/js/jquery-1.12.4.min.js' %} "></script>
+  <script type="text/javascript" src="{% static 'public/plugin/fancybox/lib/jquery.mousewheel-3.0.6.pack.js' %}">
+  </script>
+  <script type="text/javascript" src="{% static 'public/plugin/fancybox/source/jquery.fancybox.js' %}"></script>
+  <script type="text/javascript" src="{% static 'public/plugin/parallax/parallax.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'public/plugin/owl-carousel/owl.carousel.min.js' %}"></script>
+  <script language="JavaScript" type="text/javascript" src="{% static 'public/js/main.js' %}"></script>
+  <script type="text/javascript" src="{% static 'public/plugin/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
