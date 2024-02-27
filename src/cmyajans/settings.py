@@ -148,7 +148,7 @@ EMAIL_PORT = 587
 
 EMAIL_HOST_USER = 'tugrul.tf51@gmail.com'
 
-EMAIL_HOST_PASSWORD = 'ccmzmserrhvyidqx'
+EMAIL_HOST_PASSWORD = ''
 
 DEFAULT_TO_EMAIL = 'fferhattugrul@gmail.com'
 
